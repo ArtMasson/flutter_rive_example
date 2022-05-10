@@ -47,29 +47,34 @@ class _MascotAnimationPageState extends State<MascotAnimationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(children: [
-        _riveArtboard == null
-            ? const SizedBox()
-            : Expanded(
-                child: Rive(
-                  artboard: _riveArtboard!,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          _riveArtboard == null
+              ? const SizedBox()
+              : Expanded(
+                  child: Rive(
+                    artboard: _riveArtboard!,
+                  ),
                 ),
+          ButtonBar(
+            alignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                onPressed: _hitLookUp,
+                child: const Text('Look up!'),
               ),
-        ButtonBar(
-          children: [
-            ElevatedButton(
-              onPressed: _hitLookUp,
-              child: const Text('Look up!'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                _dance?.value = !_dance!.value;
-              },
-              child: const Text('Dance!'),
-            ),
-          ],
-        ),
-      ]),
+              ElevatedButton(
+                onPressed: () {
+                  _dance?.value = !_dance!.value;
+                },
+                child: const Text('Dance!'),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

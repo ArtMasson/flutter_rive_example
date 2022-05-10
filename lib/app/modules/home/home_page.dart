@@ -18,16 +18,18 @@ class HomePage extends StatelessWidget {
         children: [
           SizedBox(
             width: 300,
-            child: ListView(children: [
-              ListTile(
-                title: const Text(
-                  'Flutter mascot animmation',
+            child: ListView(
+              children: [
+                ListTile(
+                  title: const Text(
+                    'Flutter mascot animation',
+                  ),
+                  onTap: () {
+                    Modular.to.navigate('/mascot');
+                  },
                 ),
-                onTap: () {
-                  Modular.to.navigate('/mascot');
-                },
-              ),
-            ]),
+              ],
+            ),
           ),
           Container(
             width: 1,
