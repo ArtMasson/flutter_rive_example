@@ -35,8 +35,8 @@ class _PlayOneShotAnimationWidgetState
       child: Column(
         children: [
           Expanded(
-            child: RiveAnimation.network(
-              'https://cdn.rive.app/animations/vehicles.riv',
+            child: RiveAnimation.asset(
+              'vehicles.riv',
               animations: const ['idle', 'curves'],
               controllers: [_controller],
             ),

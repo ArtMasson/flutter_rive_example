@@ -8,8 +8,8 @@ class SimpleAnimationWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Material(
       child: Center(
-        child: RiveAnimation.network(
-          'https://cdn.rive.app/animations/vehicles.riv',
+        child: RiveAnimation.asset(
+          'vehicles.riv',
           fit: BoxFit.cover,
         ),
       ),

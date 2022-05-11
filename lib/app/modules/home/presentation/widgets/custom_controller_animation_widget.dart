@@ -10,8 +10,8 @@ class CustomControllerAnimationWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: RiveAnimation.network(
-          'https://cdn.rive.app/animations/vehicles.riv',
+        child: RiveAnimation.asset(
+          'vehicles.riv',
           fit: BoxFit.cover,
           animations: const ['idle'],
           controllers: [SpeedController('curves', speedMultiplier: 3)],

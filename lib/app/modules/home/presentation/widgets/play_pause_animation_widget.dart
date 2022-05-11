@@ -33,8 +33,8 @@ class _PlayPauseAnimationWidgetState extends State<PlayPauseAnimationWidget> {
       child: Column(
         children: [
           Expanded(
-            child: RiveAnimation.network(
-              'https://cdn.rive.app/animations/vehicles.riv',
+            child: RiveAnimation.asset(
+              'vehicles.riv',
               controllers: [_controller],
               // Update the play state when the widget's initialized
               onInit: (_) => setState(() {}),

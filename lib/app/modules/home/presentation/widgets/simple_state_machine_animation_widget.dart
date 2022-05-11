@@ -26,8 +26,8 @@ class _SimpleStateMachineAnimationWidgetState
     return Material(
       child: Center(
         child: GestureDetector(
-          child: RiveAnimation.network(
-            'https://cdn.rive.app/animations/vehicles.riv',
+          child: RiveAnimation.asset(
+            'vehicles.riv',
             fit: BoxFit.cover,
             onInit: _onRiveInit,
           ),
