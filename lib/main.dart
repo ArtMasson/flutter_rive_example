@@ -8,6 +8,7 @@ import 'app/app_widget.dart';
 void main() {
   setPathUrlStrategy();
   WidgetsFlutterBinding.ensureInitialized();
+  Paint.enableDithering = true;
 
   runApp(
     ModularApp(

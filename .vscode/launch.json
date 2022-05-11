@@ -2,11 +2,11 @@
     "version": "0.1.0",
     "configurations": [
       {
-        "name": "Run --html",
+        "name": "Run --canvas",
         "program": "lib/main.dart",
         "request": "launch",
         "type": "dart",
-        "args": ["--web-renderer", "html"]
+        "args": ["--web-renderer", "canvaskit"]
       }
     ]
   }

@@ -24,7 +24,7 @@ class _MascotAnimationPageState extends State<MascotAnimationPage> {
 
     // Load the animation file from the bundle, note that you could also
     // download this. The RiveFile just expects a list of bytes.
-    rootBundle.load('animations/flutter_mascot.riv').then(
+    rootBundle.load('flutter_mascot.riv').then(
       (data) async {
         // Load the RiveFile from the binary data.
         final file = RiveFile.import(data);
