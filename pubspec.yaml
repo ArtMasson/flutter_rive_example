@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  flutter_modular: ^4.5.1+1
+  flutter_modular: ^5.0.0
   url_strategy: ^0.2.0
   rive: ^0.8.4
   get: ^4.3.6
